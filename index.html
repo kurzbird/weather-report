@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <h1>Weather Report</h1>
+
+    <main>
+
+        <section id="left">
+            <section id="boxes">
+                <h2>City Name</h2>
+                <p>San Francisco</p>
+            </section>
+
+            <section id="boxes">
+                <h2>Temperature</h2>
+                <button id="increaseTemp">▲</button>
+                <div id="displayTemp">70 °F</div>
+                <button id="decreaseTemp">▼</button>
+                <button id="realtime">Get Realtime Temperature</button>
+            </section>
+
+            <section id="boxes">
+                <h2>Sky</h2>
+                <select id="sky">
+                    <option value="sunny">Sunny</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="snowy">Snowy</option>
+                    <option value="foggy">Foggy</option>
+                </select>
+            </section>
+
+        </section>
+
+        <section id="right">
+            <h2>How We Think It Feels</h2>
+            <img id="nature" alt="image reflecting the weather">
+        </section>
+    </main>
+    <script src="styles/index.css"></script>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
