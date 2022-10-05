@@ -1,0 +1,48 @@
+body {
+    background-color: #c4c3d0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#right {
+    gap: 50px;
+}
+
+.boxes {
+    border: 2px solid #3366CC;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+img {
+    max-width: 500px;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+.teal {
+    color: teal;
+}

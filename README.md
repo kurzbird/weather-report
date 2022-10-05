@@ -1,1 +1,1 @@
-# weather-report
+Goal: Create a weather app using vanilla JavaScript.

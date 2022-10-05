@@ -5,30 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/index.css" rel="stylesheet">
     <title>Weather App</title>
 </head>
 
 <body>
     <h1>Weather Report</h1>
+    <p>for the city of <span id="displayCity">San Francisco</span></p>
 
     <main>
-
         <section id="left">
             <section id="boxes">
                 <h2>City Name</h2>
-                <p>San Francisco</p>
+                <label>Enter a different city:</label><br>
+                <input type="text" id="cityInput" placeholder="New York">
+                <button id="resetCity">Reset</button>
             </section>
 
             <section id="boxes">
                 <h2>Temperature</h2>
                 <button id="increaseTemp">▲</button>
-                <div id="displayTemp">70 °F</div>
+                <p id="displayTemp" class="orange">70 °F</p>
                 <button id="decreaseTemp">▼</button>
                 <button id="realtime">Get Realtime Temperature</button>
             </section>
 
             <section id="boxes">
                 <h2>Sky</h2>
+                <label>Change the sky:</label><br>
                 <select id="sky">
                     <option value="sunny">Sunny</option>
                     <option value="cloudy">Cloudy</option>
@@ -42,10 +46,9 @@
 
         <section id="right">
             <h2>How We Think It Feels</h2>
-            <img id="nature" alt="image reflecting the weather">
+            <img id="landscape" src="assets/cool.png" alt="image reflecting the weather">
         </section>
     </main>
-    <script src="styles/index.css"></script>
     <script src="src/index.js"></script>
 </body>
 
