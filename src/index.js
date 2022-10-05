@@ -5,9 +5,11 @@ const state = {
     city: "San Francisco",
 };
 
-const displayTempContainer = document.querySelector("#displayTemp");
+const displayTempContainer = document.getElementById("displayTemp");
 const cityInput = document.getElementById("cityInput");
 const cityDisplay = document.getElementById("displayCity");
+const landscape = document.getElementById("landscape");
+const skySelection = document.getElementById("sky");
 
 const displayTemp = () => {
     displayTempContainer.textContent = `${state.temp} °F`;
@@ -63,6 +65,25 @@ const resetCity = () => {
     cityDisplay.textContent = state.city;
 };
 
+const changeSky = () => {
+    switch (skySelection.value) {
+        case 'sunny':
+            document.body.className = 'sunny';
+            break;
+        case 'cloudy':
+            document.body.className = 'cloudy';
+            break;
+        case 'foggy':
+            document.body.className = 'foggy';
+            break;
+        case 'rainy':
+            document.body.className = 'rainy';
+            break;
+        case 'snowy':
+            document.body.className = 'snowy';
+    }
+}
+
 const registerEventHandlers = () => {
     const increaseButton = document.querySelector("#increaseTemp");
     increaseButton.addEventListener("click", increaseTemp);
@@ -74,6 +95,8 @@ const registerEventHandlers = () => {
 
     const resetCityButton = document.getElementById("resetCity");
     resetCityButton.addEventListener("click", resetCity);
+
+    skySelection.addEventListener("change", changeSky)
 }
 
 document.addEventListener("DOMContentLoaded", registerEventHandlers);

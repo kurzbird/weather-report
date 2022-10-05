@@ -1,10 +1,12 @@
 body {
-    background-color: #c4c3d0;
+    background-image: url(../assets/sunny.png);
+    background-size: cover;
 }
 
 main {
     display: flex;
     align-items: center;
+    gap: 100px;
 }
 
 #left {
@@ -17,9 +19,11 @@ main {
     gap: 50px;
 }
 
-.boxes {
-    border: 2px solid #3366CC;
+#boxes {
+    border: 2px solid #c4c3d0;
+    background: #c4c3d0;
     border-radius: 10px;
+    width: auto;
     padding: 20px;
 }
 
@@ -45,4 +49,49 @@ img {
 
 .teal {
     color: teal;
+}
+
+.hot {
+    content: url(../assets/hot.png)
+}
+
+.warm {
+    content: url(../assets/warm.png)
+}
+
+.cool {
+    content: url(../assets/cool.png)
+}
+
+.chilly {
+    content: url(../assets/chilly.png)
+}
+
+.cold {
+    content: url(../assets/cold.png)
+}
+
+.sunny {
+    background-image: url(../assets/sunny.png);
+    background-size: cover;
+}
+
+.cloudy {
+    background-image: url(../assets/cloudy.png);
+    background-size: cover;
+}
+
+.foggy {
+    background-image: url(../assets/foggy.png);
+    background-size: cover;
+}
+
+.rainy {
+    background-image: url(../assets/rainy.png);
+    background-size: cover;
+}
+
+.snowy {
+    background-image: url(../assets/snowy.png);
+    background-size: cover;
 }

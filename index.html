@@ -9,7 +9,7 @@
     <title>Weather App</title>
 </head>
 
-<body>
+<body body="sunny">
     <h1>Weather Report</h1>
     <p>for the city of <span id="displayCity">San Francisco</span></p>
 
@@ -36,9 +36,9 @@
                 <select id="sky">
                     <option value="sunny">Sunny</option>
                     <option value="cloudy">Cloudy</option>
+                    <option value="foggy">Foggy</option>
                     <option value="rainy">Rainy</option>
                     <option value="snowy">Snowy</option>
-                    <option value="foggy">Foggy</option>
                 </select>
             </section>
 
@@ -46,7 +46,7 @@
 
         <section id="right">
             <h2>How We Think It Feels</h2>
-            <img id="landscape" src="assets/cool.png" alt="image reflecting the weather">
+            <img id="landscape" class="warm" src="assets/warm.png" alt="image reflecting the weather">
         </section>
     </main>
     <script src="src/index.js"></script>
